@@ -1,0 +1,526 @@
+<?xml version="1.0"?>
+<mat:Materials xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mat="http://www.airbus.com/universal-format/material/library">
+  <Material type="Composite">
+    <materialName>W3T_F593_193_0.237_user</materialName>
+    <specificationName/>
+    <library>User</library>
+    <businessVersion>1.0</businessVersion>
+    <materialFamily>Monolithic</materialFamily>
+    <materialSubFamily>WovenFabric</materialSubFamily>
+    <materialCharacteristics>
+      <key name="FAW" value="193" unit="g/m**2" type="SURFACIC MASS"/>
+      <key name="Fibre" value="W3T" type="string"/>
+      <key name="FibreType" value="Carbon" type="string"/>
+      <key name="Resin" value="F593" type="string"/>
+      <key name="Thickness" value="0.237" unit="mm" type="LENGTH"/>
+    </materialCharacteristics>
+    <materialProperties>
+      <properties name="Composite">
+        <property name="rho" value="1.48" unit="g/cm**3" type="VOLUMIC MASS"/>
+        <properties name="Elastic moduli &amp; poisson coeffs">
+          <property name="E1" value="48900" unit="MPa" type="PRESSURE"/>
+          <property name="E2" value="48900" unit="MPa" type="PRESSURE"/>
+          <property name="E3" value="8500" unit="MPa" type="PRESSURE"/>
+          <property name="G12" value="3200" unit="MPa" type="PRESSURE"/>
+          <property name="G13" value="3200" unit="MPa" type="PRESSURE"/>
+          <property name="G23" value="3200" unit="MPa" type="PRESSURE"/>
+          <property name="nu12" value="0.05" unit="" type="DIMENSIONLESS"/>
+          <property name="nu13" value="0.35" unit="" type="DIMENSIONLESS"/>
+          <property name="nu23" value="0.35" unit="" type="DIMENSIONLESS"/>
+        </properties>
+        <properties name="Material strengths">
+          <property name="f1_t" value="535" unit="MPa" type="PRESSURE"/>
+          <property name="f1_c" value="-575" unit="MPa" type="PRESSURE"/>
+          <property name="f2_t" value="535" unit="MPa" type="PRESSURE"/>
+          <property name="f2_c" value="-575" unit="MPa" type="PRESSURE"/>
+          <property name="f3_c" value="-200" unit="MPa" type="PRESSURE"/>
+          <property name="f3_t" value="31" unit="MPa" type="PRESSURE"/>
+          <property name="f12_s" value="108" unit="MPa" type="PRESSURE"/>
+          <property name="f13_s" value="68" unit="MPa" type="PRESSURE"/>
+          <property name="f23_s" value="68" unit="MPa" type="PRESSURE"/>
+          <property name="f_pt" value="80" unit="MPa" type="PRESSURE"/>
+        </properties>
+        <property name="val_B" value="1.18" unit="" type="DIMENSIONLESS"/>
+        <properties name="Shear baseline">
+          <property name="f_brg" value="650" unit="MPa" type="PRESSURE"/>
+        </properties>
+        <properties name="Coeffs of thermal exp">
+          <property name="CTE_1" value="2.4e-06" unit="1/deg.C" type="COEFFICIENT OF LINEAR INFLATION"/>
+          <property name="CTE_2" value="2.4e-06" unit="1/deg.C" type="COEFFICIENT OF LINEAR INFLATION"/>
+          <property name="CTE_3" value="7e-05" unit="1/deg.C" type="COEFFICIENT OF LINEAR INFLATION"/>
+        </properties>
+        <properties name="VBCoeff (default)">
+          <property name="vbtension" value="0.88" unit="" type="DIMENSIONLESS"/>
+          <property name="vbcompression" value="0.81" unit="" type="DIMENSIONLESS"/>
+          <property name="vbbearing" value="0.79" unit="" type="DIMENSIONLESS"/>
+        </properties>
+        <properties name="VBCoeff (PSC)">
+          <property name="vbtension" value="0.87" unit="" type="DIMENSIONLESS"/>
+          <property name="vbcompression" value="0.81" unit="" type="DIMENSIONLESS"/>
+          <property name="vbbearing" value="0.79" unit="" type="DIMENSIONLESS"/>
+        </properties>
+        <properties name="VBCoeffs (pullthrough)">
+          <property name="vbpullthrough" value="0.81" unit="" type="DIMENSIONLESS"/>
+        </properties>
+        <properties name="VBCoeffs (unfolding)">
+          <property name="vbunfolding" value="0.81" unit="" type="DIMENSIONLESS"/>
+        </properties>
+        <properties name="Moisture coeffs">
+          <property name="beta11" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="beta22" value="0" unit="" type="DIMENSIONLESS"/>
+        </properties>
+        <properties name="EKDF:PT AR conditions">
+          <property name="T-74C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T-55C" value="0.9" unit="" type="DIMENSIONLESS"/>
+          <property name="T23C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T70C" value="0.75" unit="" type="DIMENSIONLESS"/>
+          <property name="T90C" value="0.65" unit="" type="DIMENSIONLESS"/>
+          <property name="T100C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T120C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T140C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T150C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T160C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T180C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T200C" value="0" unit="" type="DIMENSIONLESS"/>
+        </properties>
+        <properties name="EKDF:PT HW conditions">
+          <property name="T-74C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T-55C" value="0.9" unit="" type="DIMENSIONLESS"/>
+          <property name="T23C" value="0.95" unit="" type="DIMENSIONLESS"/>
+          <property name="T70C" value="0.75" unit="" type="DIMENSIONLESS"/>
+          <property name="T90C" value="0.65" unit="" type="DIMENSIONLESS"/>
+          <property name="T100C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T120C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T140C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T150C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T160C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T180C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T200C" value="0" unit="" type="DIMENSIONLESS"/>
+        </properties>
+        <properties name="EKDF:UF AR conditions">
+          <property name="T-74C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T-55C" value="0.90" unit="" type="DIMENSIONLESS"/>
+          <property name="T23C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T50C" value="0.856" unit="" type="DIMENSIONLESS"/>
+          <property name="T70C" value="0.75" unit="" type="DIMENSIONLESS"/>
+          <property name="T90C" value="0.65" unit="" type="DIMENSIONLESS"/>
+          <property name="T100C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T120C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T140C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T150C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T160C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T180C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T200C" value="0" unit="" type="DIMENSIONLESS"/>
+        </properties>
+        <properties name="EKDF:UF HW conditions">
+          <property name="T-74C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T-55C" value="0.90" unit="" type="DIMENSIONLESS"/>
+          <property name="T23C" value="0.95" unit="" type="DIMENSIONLESS"/>
+          <property name="T50C" value="0.835" unit="" type="DIMENSIONLESS"/>
+          <property name="T70C" value="0.75" unit="" type="DIMENSIONLESS"/>
+          <property name="T90C" value="0.65" unit="" type="DIMENSIONLESS"/>
+          <property name="T100C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T120C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T140C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T150C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T160C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T180C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T200C" value="0" unit="" type="DIMENSIONLESS"/>
+        </properties>
+        <properties name="EKDF:OHT AR conditions">
+          <property name="T-74C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T-55C" value="0.86" unit="" type="DIMENSIONLESS"/>
+          <property name="T23C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T70C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T90C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T100C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T120C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T140C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T150C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T160C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T180C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T200C" value="0" unit="" type="DIMENSIONLESS"/>
+        </properties>
+        <properties name="EKDF:OHT HW conditions">
+          <property name="T-74C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T-55C" value="0.86" unit="" type="DIMENSIONLESS"/>
+          <property name="T23C" value="0.95" unit="" type="DIMENSIONLESS"/>
+          <property name="T70C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T90C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T100C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T120C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T140C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T150C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T160C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T180C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T200C" value="0" unit="" type="DIMENSIONLESS"/>
+        </properties>
+        <properties name="EKDF:OHC AR conditions">
+          <property name="T-74C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T-55C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T23C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T70C" value="0.82" unit="" type="DIMENSIONLESS"/>
+          <property name="T90C" value="0.75" unit="" type="DIMENSIONLESS"/>
+          <property name="T100C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T120C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T140C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T150C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T160C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T180C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T200C" value="0" unit="" type="DIMENSIONLESS"/>
+        </properties>
+        <properties name="EKDF:OHC HW conditions">
+          <property name="T-74C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T-55C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T23C" value="0.95" unit="" type="DIMENSIONLESS"/>
+          <property name="T70C" value="0.8" unit="" type="DIMENSIONLESS"/>
+          <property name="T90C" value="0.75" unit="" type="DIMENSIONLESS"/>
+          <property name="T100C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T120C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T140C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T150C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T160C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T180C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T200C" value="0" unit="" type="DIMENSIONLESS"/>
+        </properties>
+        <properties name="EKDF:PSC-T AR conditions">
+          <property name="T-74C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T-55C" value="0.86" unit="" type="DIMENSIONLESS"/>
+          <property name="T23C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T70C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T90C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T100C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T120C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T140C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T150C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T160C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T180C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T200C" value="0" unit="" type="DIMENSIONLESS"/>
+        </properties>
+        <properties name="EKDF:PSC-T HW conditions">
+          <property name="T-74C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T-55C" value="0.86" unit="" type="DIMENSIONLESS"/>
+          <property name="T23C" value="0.95" unit="" type="DIMENSIONLESS"/>
+          <property name="T70C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T90C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T100C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T120C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T140C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T150C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T160C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T180C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T200C" value="0" unit="" type="DIMENSIONLESS"/>
+        </properties>
+        <properties name="EKDF:PSC-C AR conditions">
+          <property name="T-74C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T-55C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T23C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T70C" value="0.83" unit="" type="DIMENSIONLESS"/>
+          <property name="T90C" value="0.76" unit="" type="DIMENSIONLESS"/>
+          <property name="T100C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T120C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T140C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T150C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T160C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T180C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T200C" value="0" unit="" type="DIMENSIONLESS"/>
+        </properties>
+        <properties name="EKDF:PSC-C HW conditions">
+          <property name="T-74C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T-55C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T23C" value="0.86" unit="" type="DIMENSIONLESS"/>
+          <property name="T70C" value="0.78" unit="" type="DIMENSIONLESS"/>
+          <property name="T90C" value="0.64" unit="" type="DIMENSIONLESS"/>
+          <property name="T100C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T120C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T140C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T150C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T160C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T180C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T200C" value="0" unit="" type="DIMENSIONLESS"/>
+        </properties>
+        <properties name="EKDF:FHT AR conditions">
+          <property name="T-74C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T-55C" value="0.86" unit="" type="DIMENSIONLESS"/>
+          <property name="T23C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T70C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T90C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T100C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T120C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T140C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T150C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T160C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T180C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T200C" value="0" unit="" type="DIMENSIONLESS"/>
+        </properties>
+        <properties name="EKDF:FHT HW conditions">
+          <property name="T-74C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T-55C" value="0.86" unit="" type="DIMENSIONLESS"/>
+          <property name="T23C" value="0.95" unit="" type="DIMENSIONLESS"/>
+          <property name="T70C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T90C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T100C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T120C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T140C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T150C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T160C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T180C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T200C" value="0" unit="" type="DIMENSIONLESS"/>
+        </properties>
+        <properties name="EKDF:FHC AR conditions">
+          <property name="T-74C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T-55C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T23C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T70C" value="0.84" unit="" type="DIMENSIONLESS"/>
+          <property name="T90C" value="0.77" unit="" type="DIMENSIONLESS"/>
+          <property name="T100C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T120C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T140C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T150C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T160C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T180C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T200C" value="0" unit="" type="DIMENSIONLESS"/>
+        </properties>
+        <properties name="EKDF:FHC HW conditions">
+          <property name="T-74C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T-55C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T23C" value="0.95" unit="" type="DIMENSIONLESS"/>
+          <property name="T70C" value="0.82" unit="" type="DIMENSIONLESS"/>
+          <property name="T90C" value="0.75" unit="" type="DIMENSIONLESS"/>
+          <property name="T100C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T120C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T140C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T150C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T160C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T180C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T200C" value="0" unit="" type="DIMENSIONLESS"/>
+        </properties>
+        <properties name="EKDF:DSB AR conditions">
+          <property name="T-74C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T-55C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T23C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T70C" value="0.77" unit="" type="DIMENSIONLESS"/>
+          <property name="T90C" value="0.67" unit="" type="DIMENSIONLESS"/>
+          <property name="T100C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T120C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T140C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T150C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T160C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T180C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T200C" value="0" unit="" type="DIMENSIONLESS"/>
+        </properties>
+        <properties name="EKDF:DSB HW conditions">
+          <property name="T-74C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T-55C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T23C" value="0.9" unit="" type="DIMENSIONLESS"/>
+          <property name="T70C" value="0.75" unit="" type="DIMENSIONLESS"/>
+          <property name="T90C" value="0.67" unit="" type="DIMENSIONLESS"/>
+          <property name="T100C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T120C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T140C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T150C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T160C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T180C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T200C" value="0" unit="" type="DIMENSIONLESS"/>
+        </properties>
+        <properties name="Parameter for non constant values">
+          <property name="f_3t min" value="7.9552" unit="MPa" type="PRESSURE"/>
+          <property name="f_3t_inter" value="28.8" unit="MPa" type="PRESSURE"/>
+          <property name="f_3t th1" value="1.48" unit="mm" type="LENGTH"/>
+          <property name="f_3t th2" value="20" unit="mm" type="LENGTH"/>
+          <property name="f_3t th3" value="4" unit="mm" type="LENGTH"/>
+          <property name="f_3t par A" value="8.24" unit="MPa/mm" type="VOLUMIC FORCE"/>
+          <property name="f_3t par B" value="-4.24" unit="MPa" type="PRESSURE"/>
+          <property name="f_3t par C" value="8.24" unit="MPa/mm" type="VOLUMIC FORCE"/>
+          <property name="f_3t par D" value="-4.24" unit="MPa" type="PRESSURE"/>
+          <property name="f_3c min" value="200" unit="MPa" type="PRESSURE"/>
+        </properties>
+        <properties name="DT AR/RT B value">
+          <property name="eps tension" value="4500" unit="" type="DIMENSIONLESS"/>
+          <property name="eps compression" value="-3640" unit="" type="DIMENSIONLESS"/>
+          <property name="eps shear" value="7280" unit="" type="DIMENSIONLESS"/>
+        </properties>
+        <properties name="EKDF:CDT-T AR conditions">
+          <property name="T-74C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T-55C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T23C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T50C" value="0.86" unit="" type="DIMENSIONLESS"/>
+          <property name="T70C" value="0.764" unit="" type="DIMENSIONLESS"/>
+          <property name="T90C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T100C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T120C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T140C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T150C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T160C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T180C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T200C" value="0" unit="" type="DIMENSIONLESS"/>
+        </properties>
+        <properties name="EKDF:CDT-T HW conditions">
+          <property name="T-74C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T-55C" value="0.86" unit="" type="DIMENSIONLESS"/>
+          <property name="T23C" value="0.86" unit="" type="DIMENSIONLESS"/>
+          <property name="T50C" value="0.86" unit="" type="DIMENSIONLESS"/>
+          <property name="T70C" value="0.764" unit="" type="DIMENSIONLESS"/>
+          <property name="T90C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T100C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T120C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T140C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T150C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T160C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T180C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T200C" value="0" unit="" type="DIMENSIONLESS"/>
+        </properties>
+        <properties name="EKDF:TDT-T AR conditions">
+          <property name="T-74C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T-55C" value="0.9" unit="" type="DIMENSIONLESS"/>
+          <property name="T23C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T50C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T70C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T90C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T100C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T120C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T140C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T150C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T160C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T180C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T200C" value="0" unit="" type="DIMENSIONLESS"/>
+        </properties>
+        <properties name="EKDF:TDT-T HW conditions">
+          <property name="T-74C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T-55C" value="0.9" unit="" type="DIMENSIONLESS"/>
+          <property name="T23C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T50C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T70C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T90C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T100C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T120C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T140C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T150C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T160C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T180C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T200C" value="0" unit="" type="DIMENSIONLESS"/>
+        </properties>
+        <properties name="EKDF:SDT-T AR conditions">
+          <property name="T-74C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T-55C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T23C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T50C" value="0.86" unit="" type="DIMENSIONLESS"/>
+          <property name="T70C" value="0.764" unit="" type="DIMENSIONLESS"/>
+          <property name="T90C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T100C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T120C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T140C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T150C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T160C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T180C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T200C" value="0" unit="" type="DIMENSIONLESS"/>
+        </properties>
+        <properties name="EKDF:SDT-T HW conditions">
+          <property name="T-74C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T-55C" value="0.86" unit="" type="DIMENSIONLESS"/>
+          <property name="T23C" value="0.86" unit="" type="DIMENSIONLESS"/>
+          <property name="T50C" value="0.86" unit="" type="DIMENSIONLESS"/>
+          <property name="T70C" value="0.764" unit="" type="DIMENSIONLESS"/>
+          <property name="T90C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T100C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T120C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T140C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T150C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T160C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T180C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T200C" value="0" unit="" type="DIMENSIONLESS"/>
+        </properties>
+        <properties name="EKDF:CDT-E AR conditions">
+          <property name="T-74C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T-55C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T23C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T50C" value="0.86" unit="" type="DIMENSIONLESS"/>
+          <property name="T70C" value="0.764" unit="" type="DIMENSIONLESS"/>
+          <property name="T90C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T100C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T120C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T140C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T150C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T160C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T180C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T200C" value="0" unit="" type="DIMENSIONLESS"/>
+        </properties>
+        <properties name="EKDF:CDT-E HW conditions">
+          <property name="T-74C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T-55C" value="0.86" unit="" type="DIMENSIONLESS"/>
+          <property name="T23C" value="0.86" unit="" type="DIMENSIONLESS"/>
+          <property name="T50C" value="0.86" unit="" type="DIMENSIONLESS"/>
+          <property name="T70C" value="0.764" unit="" type="DIMENSIONLESS"/>
+          <property name="T90C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T100C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T120C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T140C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T150C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T160C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T180C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T200C" value="0" unit="" type="DIMENSIONLESS"/>
+        </properties>
+        <properties name="EKDF:TDT-E AR conditions">
+          <property name="T-74C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T-55C" value="0.9" unit="" type="DIMENSIONLESS"/>
+          <property name="T23C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T50C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T70C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T90C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T100C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T120C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T140C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T150C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T160C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T180C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T200C" value="0" unit="" type="DIMENSIONLESS"/>
+        </properties>
+        <properties name="EKDF:TDT-E HW conditions">
+          <property name="T-74C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T-55C" value="0.9" unit="" type="DIMENSIONLESS"/>
+          <property name="T23C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T50C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T70C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T90C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T100C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T120C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T140C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T150C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T160C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T180C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T200C" value="0" unit="" type="DIMENSIONLESS"/>
+        </properties>
+        <properties name="EKDF:SDT-E AR conditions">
+          <property name="T-74C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T-55C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T23C" value="1" unit="" type="DIMENSIONLESS"/>
+          <property name="T50C" value="0.86" unit="" type="DIMENSIONLESS"/>
+          <property name="T70C" value="0.764" unit="" type="DIMENSIONLESS"/>
+          <property name="T90C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T100C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T120C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T140C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T150C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T160C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T180C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T200C" value="0" unit="" type="DIMENSIONLESS"/>
+        </properties>
+        <properties name="EKDF:SDT-E HW conditions">
+          <property name="T-74C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T-55C" value="0.86" unit="" type="DIMENSIONLESS"/>
+          <property name="T23C" value="0.86" unit="" type="DIMENSIONLESS"/>
+          <property name="T50C" value="0.86" unit="" type="DIMENSIONLESS"/>
+          <property name="T70C" value="0.764" unit="" type="DIMENSIONLESS"/>
+          <property name="T90C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T100C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T120C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T140C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T150C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T160C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T180C" value="0" unit="" type="DIMENSIONLESS"/>
+          <property name="T200C" value="0" unit="" type="DIMENSIONLESS"/>
+        </properties>
+      </properties>
+    </materialProperties>
+  </Material>
+</mat:Materials>
