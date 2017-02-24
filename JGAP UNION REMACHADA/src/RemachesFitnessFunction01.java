@@ -10,33 +10,29 @@ import org.jgap.IChromosome;
 public class RemachesFitnessFunction01 extends FitnessFunction {
 
 	//private DatosIniciales datosIniciales;
-	private int numeroTotalDeRemaches;
-	List<Point2D> remaches = new ArrayList<Point2D>();
+	//private int numeroTotalDeRemaches;
+	
 	
 	@Override
-	protected double evaluate(IChromosome arg0) {
+	protected double evaluate(IChromosome the_chromosome) {
+		List<Point2D> remaches = new ArrayList<Point2D>();
 		
-		for (int i = 0 ; i < arg0.size(); i = i + 2) {
+		for (int i = 0 ; i < the_chromosome.size(); i++) {
+			Point2D remache = fromChromosomeToPoint((Integer)the_chromosome.getGene(i).getAllele());
 			
-			Point2D punto = new Point2D((Double)arg0.getGene(i).getAllele(),(Double)arg0.getGene(i+1).getAllele());
+			Point2D punto = new Point2D((Double)the_chromosome.getGene(i).getAllele(),(Double)the_chromosome.getGene(i+1).getAllele());
 			remaches.add(punto);
 		}
-		
-		//UnionRemachada unionRemachada = new UnionRemachada(this.remaches, this.datosIniciales); 
-		//unionRemachada.testInterfenciaRemaches(remaches, datosIniciales);
-		
+	
 		return 0;
 	}
 
-	public int getNumeroTotalDeRemaches() {
-		return numeroTotalDeRemaches;
+	
+	private Point2D fromChromosomeToPoint(int allele) {
+		return null;
 	}
 
-	public void setNumeroTotalDeRemaches(int numeroTotalDeRemaches) {
-		this.numeroTotalDeRemaches = numeroTotalDeRemaches;
-	}
-	
-	
+
 	public void setForceFh(double forceFh) {
 		// TODO Auto-generated method stub
 		
