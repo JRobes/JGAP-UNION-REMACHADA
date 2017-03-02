@@ -1,60 +1,71 @@
 package sebor.math;
 
-import math.geom2d.Point2D;
 
 public class Recta2D {
 	private static double Xo,Yo;
+	private static double X1,Y1;
 	private static double Vx,Vy;
-	private static double m,b;
-	private boolean esRectaVertical = false;
+	private static Double m,b;
+	private static boolean esRectaVertical = false;
 	
-	public void Recta2D(double xo, double yo, double vx, double vy){
-		if(Math.abs(vx)<0.00000001){
-			if(Math.abs(vy)<0.00000001){
+	@SuppressWarnings("null")
+	public Recta2D(double xo, double yo, double x1, double y1) throws Recta2DException{
+		//ARREGLARRRRR
+		double vx = x1-xo;
+		double vy = y1-yo;
+		if(Math.abs(vx) < 0.00000001){
+			if(Math.abs(vy) < 0.00000001){
 				//Recta mal definida
+				throw new Recta2DException("Recta mal definida, con dos puntos coincidentes");
+				/*
 				System.out.println("Recta mal definida");
+				Recta2D.Vx = (Double) null;
+				Recta2D.Vy = (Double) null;
+				Recta2D.m = null;
+				Recta2D.b = (Double) null;
+				Recta2D.Xo = (Double) null;
+				Recta2D.Yo = (Double) null;
+				Recta2D.esRectaVertical = (Boolean) null;
+				*/
 			}
 			else{
 				//Recta vertical X = x0
 				esRectaVertical = true;
-				this.Vx = 0;
-				this.Vy = vy;
-				this.Xo = xo;
-				this.Yo = yo;
+				Recta2D.Vx = 0;
+				Recta2D.Vy = vy;
+				Recta2D.Xo = xo;
+				Recta2D.Yo = yo;
+				Recta2D.m = null;
+				Recta2D.b = (Double) null;
+
 			}
 		}
 		else{
-			if(Math.abs(vy)<0.00000001){
+			if(Math.abs(vy) < 0.00000001){
 				//Recta horizontal
-				this.Vx = vx;
-				this.Vy = 0;
-				this.m = vy/vx;
-				this.b = yo-(xo/vy);
-				this.Xo = xo;
-				this.Yo = yo;
+				Recta2D.Vx = vx;
+				Recta2D.Vy = 0;
+				Recta2D.m = (Double)0.0;
+				Recta2D.b = xo;
+				Recta2D.Xo = xo;
+				Recta2D.Yo = yo;
 			}
 			else{
-				this.Vx = vx;
-				this.Vy = vy;
-				this.m = 0;
-				this.b = yo;
-				this.Xo = xo;
-				this.Yo = yo;
+				Recta2D.Vx = vx;
+				Recta2D.Vy = vy;
+				Recta2D.m = vy/vx;
+				Recta2D.b = yo-(xo/vy);
+				Recta2D.Xo = xo;
+				Recta2D.Yo = yo;
 			}
 			
 		}
 		
 	}
 
-	public void Recta2D(Point2D P1, Point2D P2){
-		Recta2D(P1.getX(), P1.getY(), P2.getX(), P2.getY());
-	}
-	
-	
-
 	public double getDistanceToPoint(double Px, double Py){
-		return 0;
-		
+		if(esRectaVertical) return (Recta2D.Xo - Px);
+		return Math.abs((Recta2D.m * Px) - Py + Recta2D.b) / Math.sqrt((Recta2D.m * Recta2D.m) + 1);
 	}
 
 
@@ -98,7 +109,12 @@ public class Recta2D {
 	}
 
 
-	public static double getM() {
+	public double getM() throws Recta2DException {
+		if(this.m == null){
+			//System.out.println("??????????????");
+			throw new Recta2DException("Recta con pendiente infinita o null");
+		}
+		
 		return m;
 	}
 
@@ -116,4 +132,30 @@ public class Recta2D {
 	public static void setB(double b) {
 		Recta2D.b = b;
 	}
+
+	public static double getX1() {
+		return X1;
+	}
+
+	public static void setX1(double x1) {
+		X1 = x1;
+	}
+
+	public static double getY1() {
+		return Y1;
+	}
+
+	public static void setY1(double y1) {
+		Y1 = y1;
+	}
+
+	public boolean isEsRectaVertical() {
+		return esRectaVertical;
+	}
+	public class Recta2DException extends Exception{
+		public Recta2DException(String msg){
+		      super(msg);
+		   }
+	}
+
 }

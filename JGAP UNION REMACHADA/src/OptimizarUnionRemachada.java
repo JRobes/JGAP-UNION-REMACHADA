@@ -1,6 +1,4 @@
 
-import java.util.List;
-
 import org.jgap.Chromosome;
 import org.jgap.Configuration;
 import org.jgap.DeltaFitnessEvaluator;
@@ -12,21 +10,35 @@ import org.jgap.impl.IntegerGene;
 import org.jgap.impl.SwappingMutationOperator;
 
 import math.geom2d.Point2D;
+import sebor.math.Recta2D;
+import sebor.math.Recta2D.Recta2DException;
 
 public class OptimizarUnionRemachada {
 	private static final int NUMBER_OF_EVOLUTIONS = 5000;
 	// The amount of boxes used to move things from one location to the other. The number of boxes determines the number of genes.
-	private static final int NUMBER_OF_ELEMENTS_AT_ONCE = 20;
+	//private static final int NUMBER_OF_ELEMENTS_AT_ONCE = 20;
     private static final int SIZE_OF_POPULATION = 50;
     
-	double forceFh = 2000;
-	double forceFv = 2320;
+	double forceFh = 10;
+	double forceFv = 30;
 	Point2D loadPoint = new Point2D(105,300);
+	private boolean rectaOK = true;
+	Recta2D rectaDeCarga;
 
 	
 	public OptimizarUnionRemachada() throws Exception {
-		Genotype genotype = this.configureJGAP();
-		this.evolve(genotype);
+		try {
+			rectaDeCarga = new Recta2D(loadPoint.getX(),loadPoint.getY(),loadPoint.getX()+this.forceFh, loadPoint.getY()+this.forceFv);
+		} catch (Recta2DException e) {
+			e.printStackTrace();
+			rectaOK = false;
+		}
+		if(rectaOK){
+			
+			Genotype genotype = this.configureJGAP();
+			this.evolve(genotype);
+		}
+
 	}
 	private Genotype configureJGAP() throws InvalidConfigurationException {
 		Configuration gaConf = new DefaultConfiguration();
@@ -51,13 +63,14 @@ public class OptimizarUnionRemachada {
 
 		// Setup the structure with which to evolve the solution of the problem.
         // An IntegerGene is used. This gene represents the index of a box in the boxes array.
-		IChromosome sampleChromosome = new Chromosome(gaConf, new IntegerGene(gaConf), 4);
+		IChromosome sampleChromosome = new Chromosome(gaConf, new IntegerGene(gaConf,0,9999), 4);
 		gaConf.setSampleChromosome(sampleChromosome);
         // Setup the fitness function
 		RemachesFitnessFunction01 fitnessFunction = new RemachesFitnessFunction01();
 		fitnessFunction.setForceFh(this.forceFh);
 		fitnessFunction.setForceFv(this.forceFv);
 		fitnessFunction.setForcePoint(this.loadPoint);
+		fitnessFunction.setRectaDeCarga(this.rectaDeCarga);
 
 		gaConf.setFitnessFunction(fitnessFunction);
 
@@ -91,6 +104,7 @@ public class OptimizarUnionRemachada {
 			double fittnessMoment = a_genotype.getFittestChromosome().getFitnessValue();
 
 			if (fittnessMoment < previousFittestMoment) {
+				System.out.println("SE MEJORAAAAAAAA");
 				this.printSolution(a_genotype.getFittestChromosome());
 				previousFittestMoment = fittnessMoment;
 				repeticionDeMinimo = 0;
@@ -98,6 +112,9 @@ public class OptimizarUnionRemachada {
 			else{
 				repeticionDeMinimo++;
 			}
+			System.out.print("Evolución num:\t"+i+"\t");
+			this.printSolution(a_genotype.getFittestChromosome());
+			
 			if(repeticionDeMinimo > 20)break;
 	     	
         	
@@ -105,13 +122,13 @@ public class OptimizarUnionRemachada {
        long endTime = System.currentTimeMillis();
 	    System.out.println("computation time = " + (endTime - startTime));
         IChromosome fittest = a_genotype.getFittestChromosome();
-
+        System.out.println("Solucion buscada:");
         this.printSolution(fittest);
 	}
 	
 	
 	private void printSolution(IChromosome fittest) {
-		
+		System.out.println("Solución:\t" + fittest.getGenes()[0]+"\t"+fittest.getGenes()[1]+"\t"+fittest.getGenes()[2]+"\t"+fittest.getGenes()[3]);
 	}
 	public static void main(String[] args) throws Exception {
 

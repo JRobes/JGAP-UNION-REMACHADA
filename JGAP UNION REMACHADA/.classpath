@@ -2,7 +2,11 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5"/>
-	<classpathentry kind="lib" path="C:/Java-jar/JGAP/jgap.jar"/>
+	<classpathentry kind="lib" path="C:/Java-jar/JGAP/jgap.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/C:/Java-jar/JGAP/doc/"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="lib" path="C:/Java-jar/javaGeom-0.11.2.jar">
 		<attributes>
 			<attribute name="javadoc_location" value="http://geom-java.sourceforge.net/api/index.html"/>
