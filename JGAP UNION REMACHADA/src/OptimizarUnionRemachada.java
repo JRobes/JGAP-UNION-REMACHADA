@@ -5,6 +5,7 @@ import org.jgap.DeltaFitnessEvaluator;
 import org.jgap.Genotype;
 import org.jgap.IChromosome;
 import org.jgap.InvalidConfigurationException;
+import org.jgap.impl.AveragingCrossoverOperator;
 import org.jgap.impl.DefaultConfiguration;
 import org.jgap.impl.IntegerGene;
 import org.jgap.impl.SwappingMutationOperator;
@@ -18,7 +19,7 @@ public class OptimizarUnionRemachada {
 	// The amount of boxes used to move things from one location to the other. The number of boxes determines the number of genes.
 	//private static final int NUMBER_OF_ELEMENTS_AT_ONCE = 20;
     private static final int SIZE_OF_POPULATION = 50;
-    
+      
 	double forceFh = 10;
 	double forceFv = 30;
 	Point2D loadPoint = new Point2D(105,300);
@@ -49,8 +50,9 @@ public class OptimizarUnionRemachada {
 		// Only use the swapping operator. Other operations makes no sense here
 		// and the size of the chromosome must remain constant
 		gaConf.getGeneticOperators().clear();
-		SwappingMutationOperator swapper = new SwappingMutationOperator(gaConf);
-		gaConf.addGeneticOperator(swapper);
+		AveragingCrossoverOperator operator = new AveragingCrossoverOperator();
+		//SwappingMutationOperator swapper = new SwappingMutationOperator(gaConf);
+		gaConf.addGeneticOperator(operator);
 
         // We are only interested in the most fittest individual
         gaConf.setPreservFittestIndividual(true);
@@ -102,7 +104,7 @@ public class OptimizarUnionRemachada {
         	
 			a_genotype.evolve();
 			double fittnessMoment = a_genotype.getFittestChromosome().getFitnessValue();
-
+			System.out.println("previous: "+previousFittestMoment+"  nueva: "+ fittnessMoment);
 			if (fittnessMoment < previousFittestMoment) {
 				System.out.println("SE MEJORAAAAAAAA");
 				this.printSolution(a_genotype.getFittestChromosome());
@@ -128,7 +130,7 @@ public class OptimizarUnionRemachada {
 	
 	
 	private void printSolution(IChromosome fittest) {
-		System.out.println("Solución:\t" + fittest.getGenes()[0]+"\t"+fittest.getGenes()[1]+"\t"+fittest.getGenes()[2]+"\t"+fittest.getGenes()[3]);
+		System.out.println("Solución:\t" + fittest.getGenes()[0].getAllele()+"\t"+fittest.getGenes()[1].getAllele()+"\t"+fittest.getGenes()[2].getAllele()+"\t"+fittest.getGenes()[3].getAllele());
 	}
 	public static void main(String[] args) throws Exception {
 
