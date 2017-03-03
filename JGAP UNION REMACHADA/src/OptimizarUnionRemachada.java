@@ -8,6 +8,7 @@ import org.jgap.InvalidConfigurationException;
 import org.jgap.impl.AveragingCrossoverOperator;
 import org.jgap.impl.DefaultConfiguration;
 import org.jgap.impl.IntegerGene;
+import org.jgap.impl.MutationOperator;
 import org.jgap.impl.SwappingMutationOperator;
 
 import math.geom2d.Point2D;
@@ -15,12 +16,14 @@ import sebor.math.Recta2D;
 import sebor.math.Recta2D.Recta2DException;
 
 public class OptimizarUnionRemachada {
-	private static final int NUMBER_OF_EVOLUTIONS = 5000;
+	private static final int NUMBER_OF_EVOLUTIONS = 8000;
 	// The amount of boxes used to move things from one location to the other. The number of boxes determines the number of genes.
 	//private static final int NUMBER_OF_ELEMENTS_AT_ONCE = 20;
-    private static final int SIZE_OF_POPULATION = 50;
+    private static final int SIZE_OF_POPULATION = 100;
+    private static final int NUMERO_DE_EVOLVES_SIN_CAMBIO = 2000;
+
       
-	double forceFh = 10;
+	double forceFh = 0;
 	double forceFv = 30;
 	Point2D loadPoint = new Point2D(105,300);
 	private boolean rectaOK = true;
@@ -50,9 +53,10 @@ public class OptimizarUnionRemachada {
 		// Only use the swapping operator. Other operations makes no sense here
 		// and the size of the chromosome must remain constant
 		gaConf.getGeneticOperators().clear();
-		AveragingCrossoverOperator operator = new AveragingCrossoverOperator();
+		AveragingCrossoverOperator operator = new AveragingCrossoverOperator(gaConf);
 		//SwappingMutationOperator swapper = new SwappingMutationOperator(gaConf);
 		gaConf.addGeneticOperator(operator);
+		gaConf.addGeneticOperator(new MutationOperator(gaConf,10));
 
         // We are only interested in the most fittest individual
         gaConf.setPreservFittestIndividual(true);
@@ -117,7 +121,7 @@ public class OptimizarUnionRemachada {
 			System.out.print("Evolución num:\t"+i+"\t");
 			this.printSolution(a_genotype.getFittestChromosome());
 			
-			if(repeticionDeMinimo > 20)break;
+			//if(repeticionDeMinimo > NUMERO_DE_EVOLVES_SIN_CAMBIO)break;
 	     	
         	
         }

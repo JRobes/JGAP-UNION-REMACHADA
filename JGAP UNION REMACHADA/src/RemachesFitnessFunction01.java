@@ -31,7 +31,7 @@ public class RemachesFitnessFunction01 extends FitnessFunction {
 		
 		for(int i = 0; i < remaches.size(); i++){
 			for(int j = i+1; j < remaches.size(); j++){
-				if(distancia(remaches.get(i),remaches.get(j)) < 40) tooClose = true;
+				if(distancia(remaches.get(i),remaches.get(j)) < 60) tooClose = true;
 			}
 		}
 		if(tooClose) return 1000000.0;
