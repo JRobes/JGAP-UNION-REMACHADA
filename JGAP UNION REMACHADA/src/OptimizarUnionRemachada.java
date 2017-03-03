@@ -23,9 +23,9 @@ public class OptimizarUnionRemachada {
     private static final int NUMERO_DE_EVOLVES_SIN_CAMBIO = 2000;
 
       
-	double forceFh = 0;
-	double forceFv = 30;
-	Point2D loadPoint = new Point2D(105,300);
+	double forceFh = 10;
+	double forceFv = 0;
+	Point2D loadPoint = new Point2D(100,50);
 	private boolean rectaOK = true;
 	Recta2D rectaDeCarga;
 
